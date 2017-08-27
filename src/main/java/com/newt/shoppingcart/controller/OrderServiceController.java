@@ -153,9 +153,9 @@ public class OrderServiceController {
 			if (shopcartItmsDtlsList != null) {
 				for (ShoppingCartItems shoppingCartItems : shopcartItmsDtlsList) {
 					if(shoppingCartItems.getStatus().equalsIgnoreCase(ShoppingCartstatus.ACTIVE.toString())){
-						if(shoppingCartItems.getProductName().equals("CAR")){
+						/**if(shoppingCartItems.getProductName().equals("CAR")){
 							shoppingCartItems.setProductDesc(shoppingCartItems.getProductDesc()+" - New");
-						}
+						}**/
 						shopcartItemsresult.add(shoppingCartItems);
 					}
 				}		
