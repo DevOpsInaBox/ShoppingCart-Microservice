@@ -16,12 +16,17 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import io.prometheus.client.spring.boot.EnablePrometheusEndpoint;
+import io.prometheus.client.spring.boot.EnableSpringBootMetricsCollector;
  
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableEurekaClient
 @EnableSwagger2
 @EnableAutoConfiguration
+@EnablePrometheusEndpoint
+@EnableSpringBootMetricsCollector
 public class DataWithMicroservicesJpaApplication {
 
 	public static void main(String[] args) {
