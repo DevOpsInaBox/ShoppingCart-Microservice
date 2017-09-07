@@ -25,8 +25,8 @@ import io.prometheus.client.spring.boot.EnableSpringBootMetricsCollector;
 @EnableEurekaClient
 @EnableSwagger2
 @EnableAutoConfiguration
-@EnablePrometheusEndpoint
-@EnableSpringBootMetricsCollector
+//@EnablePrometheusEndpoint
+//@EnableSpringBootMetricsCollector
 public class DataWithMicroservicesJpaApplication {
 
 	public static void main(String[] args) {
