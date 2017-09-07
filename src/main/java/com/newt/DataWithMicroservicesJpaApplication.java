@@ -17,8 +17,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import io.prometheus.client.spring.boot.EnablePrometheusEndpoint;
-import io.prometheus.client.spring.boot.EnableSpringBootMetricsCollector;
+//import io.prometheus.client.spring.boot.EnablePrometheusEndpoint;
+//import io.prometheus.client.spring.boot.EnableSpringBootMetricsCollector;
 
 @SpringBootApplication
 @EnableDiscoveryClient
