@@ -60,7 +60,7 @@
         </dependency>
         
   <!-- The client -->
-        <dependency>
+ <!--       <dependency>
             <groupId>io.prometheus</groupId>
             <artifactId>simpleclient</artifactId>
             <version>0.0.18</version>
@@ -92,13 +92,14 @@
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-devtools</artifactId>
 	    <optional>true</optional>
-	</dependency>
+	</dependency> -->
+        
 	<dependency>
-	    <groupId>de.tdlabs</groupId>
-	    <artifactId>prometheus-spring-boot-starter</artifactId>
-	    <version>0.0.18</version>
-	</dependency>
-  
+    	    <groupId>com.moelholm</groupId>
+    	    <artifactId>prometheus-spring-boot-starter</artifactId>
+            <version>1.0.1</version>
+        </dependency> 
+	 
         <dependency>
          <groupId>org.scala-lang</groupId>
          <artifactId>scala-library</artifactId>
