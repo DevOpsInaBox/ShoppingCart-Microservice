@@ -65,7 +65,7 @@
     	</dependency>
  
   
- <!--       <dependency>
+       <dependency>
             <groupId>io.prometheus</groupId>
             <artifactId>simpleclient</artifactId>
             <version>0.0.18</version>
@@ -93,17 +93,6 @@
             <artifactId>simpleclient_spring_boot</artifactId>
             <version>0.0.18</version>
         </dependency>
-        <dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-devtools</artifactId>
-	    <optional>true</optional>
-	</dependency> -->
-        
-	<dependency>
-    	    <groupId>com.moelholm</groupId>
-    	    <artifactId>prometheus-spring-boot-starter</artifactId>
-            <version>1.0.1</version>
-        </dependency> 
 	 
         <dependency>
          <groupId>org.scala-lang</groupId>
