@@ -21,7 +21,7 @@ public class PrometheusMetricsController{
  public ResponseEntity<String> getData(HttpServletRequest req){
  System.out.println("Entering Prometheus getData method");
   RestTemplate restTemplate = new RestTemplate();
-  String responseData = restTemplate.getForObject("http://"+req.getServerName()+":"+req.getServerPort()+"/prometheus"", String.class);
+  String responseData = restTemplate.getForObject("http://"+req.getServerName()+":"+req.getServerPort()+"/prometheus", String.class);
   StringTokenizer strToken =  new StringTokenizer(responseData,"\n");
   Set<String> strSet = new LinkedHashSet<String>();
   while(strToken.hasMoreTokens()){
