@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class PrometheusMetricsController{
 
-@RequestMapping(method=RequestMethod.GET,value="/prometheusmetrics", produces=MediaType.TEXT_PLAIN_VALUE)
+@RequestMapping(method=RequestMethod.GET,value="/prometheus-metrics", produces=MediaType.TEXT_PLAIN_VALUE)
  public ResponseEntity<String> getData(HttpServletRequest req){
  System.out.println("Entering Prometheus getData method");
   RestTemplate restTemplate = new RestTemplate();
