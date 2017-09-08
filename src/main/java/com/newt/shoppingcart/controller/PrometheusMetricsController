@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/")
 public class PrometheusMetricsController{
 
-@RequestMapping(method=RequestMethod.GET,value="/prometheus-metrics", produces=MediaType.TEXT_PLAIN_VALUE)
+@RequestMapping(method=RequestMethod.GET,value="prometheus-metrics", produces=MediaType.TEXT_PLAIN_VALUE)
  public ResponseEntity<String> getData(HttpServletRequest req){
   RestTemplate restTemplate = new RestTemplate();
   String responseData = restTemplate.getForObject("http://"+req.getServerName()+":"+req.getServerPort()+"/prometheus"", String.class);
